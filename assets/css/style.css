@@ -244,7 +244,7 @@ article.active {
   padding-bottom: 7px;
 }
 
-.article-title::after {
+.section-title::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -446,7 +446,35 @@ main {
 
 .social-item .social-link:hover { color: var(--light-gray); }
 
+.section-title {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 8px;
+  position: relative;
+  padding-bottom: 7px;
+  margin-bottom: 10px;
+}
 
+.section-icon {
+  font-size: 20px;
+  padding-top: 10px;
+  color: white;
+}
+
+.button-resume {
+  background-color: var(--text-green);
+  padding: 6px;
+  margin: 0px 16px;
+  border-radius: 999px;
+  font-size: 16px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
 
 
@@ -495,7 +523,7 @@ main {
   #ABOUT
 \*-----------------------------------*/
 
-.about .article-title { margin-bottom: 15px; }
+.about .article-title { margin-bottom: 0px; }
 
 .about-text {
   color: var(--light-gray);
@@ -764,14 +792,11 @@ main {
   #RESUME
 \*-----------------------------------*/
 
-.article-title { margin-bottom: 30px; }
 
 
 /**
  * education and experience 
  */
-
-.timeline { margin-bottom: 30px; }
 
 .timeline .title-wrapper {
   display: flex;
@@ -1299,10 +1324,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .article-title {
     font-weight: var(--fw-600);
-    padding-bottom: 15px;
+    padding-bottom: 0px;
   }
 
-  .article-title::after {
+  .section-title::after {
     width: 40px;
     height: 5px;
   }
@@ -1387,8 +1412,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * #ABOUT
    */
-
-  .about .article-title { margin-bottom: 20px; }
 
   .about-text { margin-bottom: 40px; }
 
@@ -1542,6 +1565,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .form-btn ion-icon { font-size: 18px; }
 
+  .section-icon {
+    font-size: 26px;
+    padding-top: 13px;
+    color: white;
+  }
+
 }
 
 
@@ -1601,8 +1630,6 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * PORTFOLIO
    */
-
-  .article-title { padding-bottom: 20px; }
 
   .filter-select-box { display: none; }
 
@@ -1880,6 +1907,6 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 * RESUME
 	 */
 
-  .timeline-text { max-width: 700px; }
+  .timeline-text { max-width: 900px; }
 
 }
