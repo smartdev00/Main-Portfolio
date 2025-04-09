@@ -575,7 +575,10 @@ main {
 
 .service-content-box { text-align: center; }
 
-.service-item-title { margin-bottom: 7px; }
+.service-item-title { 
+  color: var(--text-green);
+  margin-bottom: 7px; 
+}
 
 .service-item-text {
   color: var(--light-gray);
@@ -1436,6 +1439,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .service-icon-box {
+    font-size: 40px;
+    color: var(--text-green);
     margin-bottom: 0;
     margin-top: 5px;
   }
