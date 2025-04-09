@@ -160,7 +160,10 @@ html {
 
 body { background: var(--smoky-black); }
 
-
+.avatar {
+  border: 10px solid rgb(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
 
 
 
