@@ -42,7 +42,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/avatar.jpg" alt="Richard hanrick" width="80" class="avatar">
         </figure>
 
         <div class="info-content">
@@ -132,11 +132,11 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <a class="navbar-link  active" href="#about">About</a>
           </li>
 
           <li class="navbar-item">
-            <a class="navbar-link" href="/#experience">Experience</a>
+            <a class="navbar-link" href="#experience">Experience</a>
           </li>
 
           <li class="navbar-item">
@@ -144,9 +144,12 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <a class="navbar-link" href="#service">Service</a>
           </li>
 
+          <li class="navbar-item">
+            <a class="navbar-link" href="#portfolio">Portfolio</a>
+          </li>
 
           <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Blog</button>
@@ -170,7 +173,7 @@
 
       <article class="about  active" data-page="about">
 
-        <section class="about-text">
+        <section class="about-text" id="about">
 
           <div class="section-title">
             <h2 class="h2 article-title">About <strong class="text-green">Me</strong></h2>
@@ -627,7 +630,7 @@
           - service
         -->
 
-        <section class="service">
+        <section class="service" id="service">
 
           <div class="section-title">
             <h2 class="h2 article-title">My <strong class="text-green">Services</strong></h2>
@@ -769,110 +772,6 @@
         </section> -->
 
 
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <div class="section-title">
-            <h2 class="h2 article-title">What <strong class="text-green">Clients Say</strong></h2>
-          </div>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Gladwyn was hired to create a corporate identity. We were very pleased with the work done. He has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Gladwyn was hired to create a corporate identity. We were very pleased with the work done. He has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Gladwyn was hired to create a corporate identity. We were very pleased with the work done. He has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Gladwyn was hired to create a corporate identity. We were very pleased with the work done. He has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
 
         <!--
           - testimonials modal
@@ -890,7 +789,7 @@
 
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                <img src="./assets/images/avatar-1.png" alt="Timothy Moore" width="80" data-modal-img>
               </figure>
 
               <img src="./assets/images/icon-quote.svg" alt="quote icon">
@@ -898,17 +797,14 @@
 
             <div class="modal-content">
 
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+              <h4 class="h3 modal-title" data-modal-title>Timothy Moore</h4>
 
               <time datetime="2021-06-14">14 June, 2021</time>
 
               <div data-modal-text>
                 <p>
-                  Gladwyn was hired to create a corporate identity. We were very pleased with the work done. He has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  Gladwyn, who is a seasoned blockchain/web3 engineer. I love his job. Very proficient in the blockchain infra, 
+                  smart contract development and web3 integration. It was a pleasure working with him.
                 </p>
               </div>
 
@@ -918,21 +814,16 @@
 
         </div>
 
-      </article>
 
+        <!--
+          - #PORTFOLIO
+        -->
 
+        <section class="projects" id="portfolio">
 
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
+          <div class="section-title">
+            <h2 class="h2 article-title">My <strong class="text-green">Portfolio</strong></h2>
+          </div>
 
           <ul class="filter-list">
 
@@ -1150,6 +1041,42 @@
                 <p class="project-category">Web development</p>
 
               </a>
+            </li>
+
+          </ul>
+
+        </section>
+        
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <div class="section-title">
+            <h2 class="h2 article-title">What <strong class="text-green">Clients Say</strong></h2>
+          </div>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Timothy Moore" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Timothy Moore</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Gladwyn, who is a seasoned blockchain/web3 engineer. I love his job. Very proficient in the blockchain infra, 
+                    smart contract development and web3 integration. It was a pleasure working with him.
+                  </p>
+                </div>
+
+              </div>
             </li>
 
           </ul>
