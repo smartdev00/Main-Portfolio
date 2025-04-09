@@ -153,7 +153,10 @@ input, textarea {
 
 :focus { outline-color: var(--text-green); }
 
-html { font-family: var(--ff-poppins); }
+html { 
+  font-family: var(--ff-poppins);
+  scroll-behavior: smooth; 
+}
 
 body { background: var(--smoky-black); }
 
@@ -511,7 +514,10 @@ main {
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus { 
+  color: var(--light-gray-70);
+  cursor: pointer; 
+}
 
 .navbar-link.active { color: var(--text-green); }
 
