@@ -999,7 +999,16 @@ main {
   100% { transform: scale(1); }
 }
 
-.project-item > a { width: 100%; }
+.project-item a { 
+  width: 100%; 
+  color: var(--text-green);
+  transition: all;
+  transition-duration: 300ms;
+}
+
+.project-item a:hover { 
+  color: var(--text-light-green);
+}
 
 .project-img {
   position: relative;
@@ -1022,7 +1031,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
+.project-item > div:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
 
 .project-item-icon-box {
   --scale: 0.8;
@@ -1039,9 +1048,11 @@ main {
   opacity: 0;
   z-index: 1;
   transition: var(--transition-1);
+  display: flex;
+  gap: 12px;
 }
 
-.project-item > a:hover .project-item-icon-box {
+.project-item > div:hover .project-item-icon-box {
   --scale: 1;
   opacity: 1;
 }
@@ -1055,7 +1066,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover img { transform: scale(1.1); }
+.project-item > div:hover img { transform: scale(1.1); }
 
 .project-title,
 .project-category { margin-left: 10px; }
@@ -1553,6 +1564,18 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .skills-item:not(:last-child) { margin-bottom: 15px; }
+
+  .skills-item:hover .skill-item-tooltip {
+    opacity: 1;
+  }
+
+  .skill-item-tooltip {
+    opacity: 0;
+    color: var(--text-green);
+    font-size: 12px;
+    text-align: center;
+    transition: all 300ms;
+  }
 
 
 
